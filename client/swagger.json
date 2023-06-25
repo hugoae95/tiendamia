@@ -1,0 +1,77 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Tienda Mia",
+    "description": "",
+    "contact": {
+      "email": "hugodesarrollo@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:4000",
+  "basePath": "/",
+  "tags": [],
+  "paths": {
+    "/offers/{sku}": {
+      "get": {
+        "summary": "Get all the offers by SKU",
+        "description": "Get all the offers by SKU",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "sku",
+            "in": "path",
+            "description": "sku product",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object"
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/offers/best/{sku}": {
+      "get": {
+        "summary": "Get best offers by SKU",
+        "description": "Get best the offers by SKU",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "sku",
+            "in": "path",
+            "description": "sku product",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object"
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    }
+  },
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"]
+}

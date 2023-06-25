@@ -1,0 +1,47 @@
+export default [
+  {
+    id: 0,
+    price: 10.99,
+    stock: 5,
+    shipping_price: 2.99,
+    delivery_date: "2023-05-27",
+    can_be_refunded: true,
+    status: "new",
+    guarantee: true,
+    seller: {
+      name: "Seller 1",
+      qualification: 4,
+      reviews_quantity: 10,
+    },
+  },
+  {
+    id: 1,
+    price: 19.99,
+    stock: 2,
+    shipping_price: 3.99,
+    delivery_date: "2023-06-02",
+    can_be_refunded: false,
+    status: "used",
+    guarantee: false,
+    seller: {
+      name: "Seller 2",
+      qualification: 3,
+      reviews_quantity: 5,
+    },
+  },
+  {
+    id: 2,
+    price: 8.5,
+    stock: 8,
+    shipping_price: 1.99,
+    delivery_date: "2023-06-10",
+    can_be_refunded: true,
+    status: "renew",
+    guarantee: true,
+    seller: {
+      name: "Seller 3",
+      qualification: 2,
+      reviews_quantity: 3,
+    },
+  },
+];
